@@ -1,0 +1,67 @@
+.contenedor{
+    background-color: violet;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: "header    header    header"  
+                         "nav       nav       nav"
+                         "section1   section2   ads"
+                         "footer    footer    footer"
+                         "rrss      rrss      rrss";
+    
+}
+.contenedor .header{
+    background-color: green;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: white;
+    grid-column: nav;
+}
+.contenedor .section1{
+    background-color: blue;
+    grid-column: section1;
+}
+.contenedor .section2{
+    background-color: blue;
+    grid-column: section2;
+}
+.contenedor .ads{
+    background-color: red;
+    grid-column: ads;
+    display: grid;
+    
+}
+.contenedor .ads .hijonav{
+    background-color: brown;
+    
+    
+}
+.contenedor .footer{
+    background-color: greenyellow;
+    grid-column: footer;
+}
+.contenedor .rrss{
+    background-color: gray;
+    grid-column: rrss;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "hijo1 hijo2 hijo3";
+}
+.contenedor .rrss .hijo1{
+    background-color: aqua;
+    grid-column: hijo1;
+}
+.contenedor .rrss .hijo2{
+    background-color: aqua;
+    grid-column: hijo2;
+}
+.contenedor .rrss .hijo3{
+    background-color: aqua;
+    grid-column: hijo3;
+}
